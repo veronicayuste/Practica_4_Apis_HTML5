@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Api´s de HTML5</title>
+    </head>
+    <body>
+        <h1> Carga de fichero de video </h1>
+        <div id="div-file">
+            <input type="file" name="file" id="file" accept="video/*">
+            <p></p>
+            <output id="video-output"></output>
+        </div>
+        <p></p>
+        <div id="botones">
+            <button onclick="document.getElementById('video').play();" id="play" style="visibility: hidden">Reproducir</button>
+            <button onclick="document.getElementById('video').pause();"  id="pause" style="visibility: hidden">Pausar</button>
+            <button onclick="document.getElementById('video').volume += 0.1;"  id="up"  style="visibility: hidden">Subir Volumen</button>
+            <button onclick="document.getElementById('video').volume -= 0.1;"  id="down" style="visibility: hidden">Bajar Volumen</button>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
